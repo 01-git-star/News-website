@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NewsNama – Live News India</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <nav>
+    <div class="main-nav container flex">
+      <a href="#" class="company-logo">News<span>Nama</span></a>
+ 
+
+
+      <div class="nav-links">
+        <ul class="flex">
+          <li class="hover-link nav-item" id="cricket" onclick="onNavItemClick('cricket')">Cricket</li>
+          <li class="hover-link nav-item" id="india" onclick="onNavItemClick('india')">India</li>
+          <li class="hover-link nav-item" id="technology" onclick="onNavItemClick('technology')">Technology</li>
+          <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+        </ul>
+      </div>
+      <div class="search-bar flex">
+        <input type="text" class="news-input" id="search-text" placeholder="e.g. Search news" />
+        <button class="search-button" id="search-button">Search</button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="cards-container container" id="cardscontainer"></div>
+  </main>
+
+  <template id="template-news-card">
+    <div class="card">
+      <div class="card-header">
+        <img src="https://via.placeholder.com/400x200" alt="news image" id="news-img" />
+      </div>
+      <div class="card-content">
+        <h3 id="news-title">News Title</h3>
+        <h6 class="news-source" id="news-source">NewsNama · Date</h6>
+        <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet...</p>
+      </div>
+    </div>
+  </template>
+  <div id="loader">Loading...</div>
+  <!-- <footer>
+  <p>© 2025 NewsNama | Contact: newsnama@email.com</p>
+</footer> -->
+<footer>
+  <p>© 2025 NewsNama | Contact: <a href="mailto:newsnama@email.com">newsnama@email.com</a></p>
+
+  <div class="footer-links">
+    <a href="#about">About Us</a> |
+    <a href="#privacy">Privacy Policy</a> |
+    <a href="#terms">Terms of Service</a> |
+    <a href="#faq">FAQ</a>
+  </div>
+
+  <div class="social-media">
+    <a href="#"><img src="icons/facebook.png" alt="Facebook" width="20"></a>
+    <a href="#"><img src="icons/twitter.png" alt="Twitter" width="20"></a>
+    <a href="#"><img src="icons/instagram.png" alt="Instagram" width="20"></a>
+  </div>
+</footer>
+
+
+</body>
+</html>
